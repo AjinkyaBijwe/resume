@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+$font-family-sans-serif: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$body-bg: #f7f7f7;
+$body-color: #161616;
+$primary: #2196f3;
+$secondary: #00c0dd;
+$success: #11a54c;
+$info: #1c5cc3;
+$warning: #e7891d;
+$danger:#e2223b;
+$light: #fafafa;
+$dark: #1f1f1f;
+
+$theme-colors: (
+  "primary": $primary,
+  "secondary": $secondary,
+  "success":$success,
+  "info": $info,
+  "warning": $warning,
+  "danger": $danger,
+  "light": $light,
+  "dark": $dark
+);
+
+@import "bootstrap/scss/bootstrap";
+
+$body-bg-alternate: shade-color($primary, 30%);
+$body-bg-alternate-color: $light;
+
+a {
+  color: $body-bg-alternate-color;
+}
+
+.badge {
+  --bs-badge-padding-x: 0.75em;
+  --bs-badge-padding-y: 0.5em;
+  --bs-badge-font-size: 0.8rem;
+  --bs-badge-font-weight: 500;
+  --bs-badge-border-radius: 0.25rem;
+  --bs-badge-color: $body-bg-alternate-color;
+  background: shade-color($primary, 50%);
+  border: 1px solid shade-color($primary, 75%);
+}
+
+.card {
+  --bs-card-border-radius: 0.5rem;
+  --bs-card-box-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --bs-card-inner-border-radius: calc(0.25rem - 1px);
+  --bs-card-cap-padding-y: 1rem;
+  --bs-card-cap-padding-x: 1.5rem;
+  --bs-card-spacer-y: 1.5rem;
+  --bs-card-spacer-x: 1.5rem;
+  --bs-card-cap-bg: transparent;
+  --bs-card-img-overlay-padding: 1rem;
+  --bs-card-group-margin: 0.75rem;
+  --bs-card-border-width: 0;
+  --bs-card-bg: #ffffff;
+  box-shadow: var(--bs-card-box-shadow);
+
+  .card-header {
+    font-weight: 500;
+    --bs-card-border-width: 1px;
+  }
+
+  .card-body {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.container {
+  border: 0.5rem solid #fff;
+
+  .section {
+
+    .section-icon {
+      width: 1.25rem;
+      height: 1.25rem;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+
+    .section-heading {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.header {
+
+  .title {
+    // background: $bg-alternate;
+    // color: $bg-alternate-color;
+    border-radius: 0.5rem 0.5rem 0 0;
+    position: relative;
+    border: solid $body-bg-alternate;
+    border-width: 0;
+
+    .point {
+      position: absolute;
+      padding: 0.75rem;
+      background: $body-bg-alternate;
+      bottom: -1.5rem;
+      right: -1.5rem;
+      border-radius: 50%;
+      border: 0.5rem solid #fff;
+      display: none;
+    }
+
+    .title-header {
+
+      .profile-image {
+        width: 3.5rem;
+        height: 3.5rem;
+        border: 2px solid $primary;
+        padding: 0.1rem;
+
+        img {
+          width: 100%;
+          height: 100%;
+          border-radius: 0.25rem;
+        }
+      }
+    }
+  }
+
+  .title {
+
+    .summary {
+      font-size: 0.9rem;
+    }
+  }
+
+  .contact {
+    background: $body-bg-alternate;
+    color: $body-bg-alternate-color;
+    border-radius: 0;
+
+    .section {
+
+      .item {
+
+        &:first-child {
+          margin-top: 0 !important;
+        }
+      }
+
+      .section-heading {
+        color: tint-color($primary, 90%);
+
+        &::after {
+          border-color: tint-color($primary, 90%);
+        }
+      }
+    }
+
+    .contact-info {
+
+      .icon {
+        width: 1rem;
+        height: 1rem;
+        margin-right: 0.75rem;
+        display: flex;
+        margin-top: 0.125rem;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      .item-content {
+        font-size: 0.9rem;
+      }
+    }
+
+    .social-info {
+
+      .social-icon {
+        width: 1.25rem;
+        height: 1.25rem;
+
+        img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+
+  @media (min-width: 992px) { // Smaller Screens
+
+    .title {
+      border-radius: 0.5rem 0 0 0;
+      border-width: 0 0 0.5rem 0;
+
+      .point {
+        display: block;
+      }
+    }
+  
+    .contact {
+      border-radius: 0 0.5rem 0 0;
+      border-bottom: 0.5rem solid #fff;
+    }
+  }
+}
+
+.main-body {
+
+  .main {
+
+    .section {
+
+      .section-heading {
+        color: shade-color($primary, 35%);
+      }
+
+      .item {
+    
+        &:last-child {
+          margin-bottom: 0 !important;
+        }
+
+        .item-content {
+          font-size: 0.9rem;
+          
+          .description-list {
+
+            .description {
+
+              &:last-child {
+                margin-bottom: 0 !important;
+              }
+  
+              .marker {
+                min-width: 1rem;
+                font-size: 0.5rem;
+                margin-top: 0.375rem;
+              }
+  
+              .desc {
+                flex: 1 1 auto;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .aside {
+    background: $body-bg-alternate;
+    color: $body-bg-alternate-color;
+    border-radius: 0 0 0.5rem 0.5rem;
+
+    .section {
+
+      .section-heading {
+        color: tint-color($primary, 90%);
+
+        &::after {
+          border-color: tint-color($primary, 90%);
+        }
+      }
+
+      .item {
+    
+        &:last-child {
+          margin-bottom: 0 !important;
+        }
+
+        .item-content {
+          font-size: 0.9rem;
+        }
+      }
+
+      &.skills {
+
+        .skill {
+
+          &:last-child {
+            margin-bottom: 0 !important;
+          }
+        }
+      }
+
+      &.achievements {
+
+        .item {
+
+          .item-content {
+
+            .description-list {
+
+              .description {
+
+                &:last-child {
+                  margin-bottom: 0 !important;
+                }
+      
+                .marker {
+                  min-width: 1rem;
+                  font-size: 0.5rem;
+                  margin-top: 0.375rem;
+                }
+      
+                .desc {
+                  flex: 1 1 auto;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .badge-items {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.25rem;
+    }
+  }
+
+  @media (min-width: 992px) { // Smaller Screens
+
+    .aside {
+      border-radius: 0 0 0.5rem 0;
+    }
+  }
+}

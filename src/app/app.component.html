@@ -1,0 +1,194 @@
+<div class="main-wrapper p-4">
+  <!-- <button class="btn btn-primary" (click)="downloadPDF()"> Download</button> -->
+  <div class="container card" #resume>
+    <div class="header">
+      <div class="row">
+        <div class="title col-12 col-lg-8 col-xl-8 p-4"> 
+          <div class="title-header d-flex mb-3">
+            <div class="profile-image rounded me-3" *ngIf="!hideInDowload">
+              <img [src]="resumeData.info.picture" alt="image" />
+            </div>
+            <div class="profile-name">
+              <h3 class="name mb-0 text-capitalize">{{ resumeData.info.name }}</h3>
+              <div class="tagline">
+                {{ resumeData.info.designation }}
+              </div>
+            </div>
+          </div>
+          <div class="summary text-justify">
+            {{ resumeData.info.summary }}
+          </div>
+          <div class="point"></div>
+        </div>
+
+        <div class="contact col-12 col-lg-4 col-xl-4 p-4 m-0">
+          <section class="section contact-info">
+            <div class="item mt-2 d-flex align-items-center" *ngFor="let info of resumeData.contactInfo.main" [title]="info.title">
+              <a class="item-heading icon" [href]="info.link" target="_blank">
+                <img [src]="info.icon" [alt]="info.title" />
+              </a>
+              <a [href]="info.link" target="_blank" class="item-content text-light text-decoration-none">
+                {{ info.link }}
+              </a>
+            </div>
+            <div class="item mt-2 d-flex align-items-center" *ngFor="let info of resumeData.contactInfo.social" [title]="info.title">
+              <a class="item-heading icon" [href]="'https://' + info.link" target="_blank">
+                <img [src]="info.icon" [alt]="info.title" />
+              </a>
+              <a [href]="info.link" target="_blank" class="item-content text-light text-decoration-none">
+                {{ info.link }}
+              </a>
+            </div>
+          </section>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row main-body">
+      <div class="main col-12 col-lg-8 col-xl-8 p-4">
+        <section class="section experience pb-4">
+          <div class="section-header d-flex mb-3">
+            <div class="section-icon me-2">
+              <img src="assets/img/experience.svg" alt="experience" />
+            </div>
+            <h5 class="text-uppercase section-heading m-0">Work Experiences</h5>
+          </div>
+          <div class="item mb-3" *ngFor="let data of resumeData?.experience; let i = index">
+            <div class="item-heading">
+              <h6 class="item-title mb-0 fw-medium">{{ data?.designation }}</h6>
+              <div class="item-meta fw-medium text-muted d-flex align-items-center justify-content-between" style="font-size: 0.9rem;">
+                <div class="company">
+                  {{ data?.company }}
+                </div>
+                <div class="location">
+                  {{ data?.time }} | {{ data?.location }}
+                </div>
+              </div>
+            </div>
+            <div class="item-content mt-2">
+              <div class="description-list">
+                <div class="d-flex description mb-1" *ngFor="let description of data?.description">
+                  <div class="marker">●</div>
+                  <div class="desc"> {{description }}</div> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section education">
+          <div class="section-header d-flex">
+            <div class="section-icon me-2">
+              <img src="assets/img/education.svg" alt="education" />
+            </div>
+            <h5 class="text-uppercase section-heading m-0">Education</h5>
+          </div>
+          <div class="item mt-3" *ngFor="let education of resumeData?.education">
+            <div class="item-heading">
+              <h6 class="item-title mb-1 fw-medium">{{ education.degree }} in {{ education.major }}</h6>
+              <div class="item-meta fw-medium text-muted d-flex align-items-center justify-content-between" style="font-size: 0.9rem;">
+                <div class="university">
+                  {{ education.university }} (GPA: {{education.gpa}})
+                </div>
+                <div class="location">
+                  {{ education.duration }} | {{ education.location }}
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section class="section projects pt-4" *ngIf="!hideInDowload">
+          <div class="section-header d-flex mb-3">
+            <div class="section-icon me-2">
+              <img src="assets/img/projects.svg" alt="Projects" />
+            </div>
+            <h5 class="text-uppercase section-heading m-0">Projects</h5>
+          </div>
+          <div class="item mb-3" *ngFor="let data of resumeData?.projects">
+            <div class="item-heading fw-semibold">
+              {{ data.name }}
+            </div>
+            <div class="item-content">
+              {{ data?.description }}
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="aside col-12 col-lg-4 col-xl-4 p-4">
+        <section class="section skills pb-4">
+          <div class="section-header d-flex mb-3">
+            <div class="section-icon me-2">
+              <img src="assets/img/skills.svg" alt="experience" />
+            </div>
+            <h5 class="text-uppercase section-heading m-0">Skills</h5>
+          </div>
+          <div class="mb-3 skill" *ngFor="let item of resumeData?.skills">
+            <div class="item-title fw-semibold mb-2">{{ item.name }}</div>
+            <div class="badge-items">
+              <div class="badge" *ngFor="let desc of item.description">{{ desc }}</div>
+            </div>
+          </div>
+        </section>
+        
+        <section class="section certification pb-4">
+          <div class="section-header d-flex mb-3">
+            <div class="section-icon me-2">
+              <img src="assets/img/certificates.svg" alt="experience" />
+            </div>
+            <h5 class="text-uppercase section-heading m-0">Certifications</h5>
+          </div>
+          <div class="badge-items">
+            <a class="badge text-decoration-none" [href]="certification.link" *ngFor="let certification of resumeData?.certifications" target="_blank">
+              {{ certification.name }}
+            </a>
+          </div>
+        </section>
+        
+        <section class="section achievements">
+          <div class="section-header d-flex mb-3">
+            <div class="section-icon me-2">
+              <img src="assets/img/achievements.svg" alt="experience" />
+            </div>
+            <h5 class="text-uppercase section-heading m-0">Achievements</h5>
+          </div>
+          <div class="item mt-3">
+            <div class="item-content mt-2">
+              <div class="description-list">
+                <div class="d-flex description mb-3" *ngFor="let achievement of resumeData?.achievements">
+                  <div class="marker">●</div>
+                  <div class="desc"> {{achievement.name}}</div> 
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section class="section interests pt-4" *ngIf="!hideInDowload">
+          <div class="section-header d-flex mb-3">
+            <div class="section-icon me-2">
+              <img src="assets/img/interests.svg" alt="Interests" />
+            </div>
+            <h5 class="text-uppercase section-heading m-0">Interests</h5>
+          </div>
+          <div class="badge-items">
+            <div class="item-content badge" *ngFor="let interest of resumeData?.interests">{{ interest }}</div>
+          </div>
+        </section>
+        
+        <section class="section languages pt-4">
+          <div class="section-header d-flex mb-3">
+            <div class="section-icon me-2">
+              <img src="assets/img/languages.svg" alt="Languages" />
+            </div>
+            <h5 class="text-uppercase section-heading m-0">Languages</h5>
+          </div>
+          <div class="badge-items">
+            <div class="item-content badge" *ngFor="let language of resumeData?.languages">{{ language }}</div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </div>
+</div>
