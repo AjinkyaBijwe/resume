@@ -8,7 +8,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "deploy": "ng build --base-href=https://ajinkyabijwe.github.io/resume/"
+    "deploy": "ng build --base-href=https://ajinkya.dev/"
   },
   "private": true,
   "dependencies": {
