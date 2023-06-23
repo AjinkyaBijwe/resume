@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+  <g>
+    <path d="M448 64h-48V16c0-8.832-7.168-16-16-16H96C69.536 0 48 21.536 48 48v400c0 35.296 28.704 64 64 64h336c8.832 0 16-7.168 16-16V80c0-8.832-7.168-16-16-16zm-80 336c0 8.832-7.168 16-16 16H160c-8.832 0-16-7.168-16-16v-32c0-44.128 35.904-80 80-80h64c44.128 0 80 35.872 80 80v32zM192 192c0-35.296 28.704-64 64-64s64 28.704 64 64-28.704 64-64 64-64-28.704-64-64zM368 64H96c-8.832 0-16-7.168-16-16s7.168-16 16-16h272v32z" fill="#e9f5fe" data-original="#000000" class=""></path>
+  </g>
+</svg>

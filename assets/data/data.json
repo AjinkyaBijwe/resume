@@ -1,0 +1,208 @@
+{
+  "info": {
+    "name": "Ajinkya Bijwe",
+    "designation": "Front-End/Full Stack Developer",
+    "summary": "Passionate and proficient developer with over 7 years of experience in application development, rapid prototyping, and database management. Speaheaded successful transitions from legacy frameworks to cutting-edge technologies, optimizing system performance and user experience. Committed to continuous growth to further enhance skills and stay ahead of industry trends. Dedicated professional with a strong drive to deliver high-quality solutions that meet client needs and exceed expectations.",
+    "picture": "https://avatars0.githubusercontent.com/u/8812357?s=460&u=0fcfbe5f0083b8a5b0e49aa83f0173c9c4f9b319&v=4"
+  },
+  "contactInfo": {
+    "main" : [{
+      "icon": "assets/img/contact/email.svg",
+      "title": "Email",
+      "link": "ajinkya.bijwe@gmail.com"
+    }, {
+      "icon": "assets/img/contact/phone.svg",
+      "title": "Phone",
+      "link": "+91 7758854840"
+    }, {
+      "icon": "assets/img/contact/location.svg",
+      "title": "Location",
+      "link": "Pune, IN"
+    }],
+    "social": [{
+      "icon": "assets/img/contact/globe.svg",
+      "title": "Website",
+      "link": "ajinkya.dev"
+    }, {
+      "icon": "assets/img/contact/linkedin.svg",
+      "title": "linkedin",
+      "link": "linkedin.com/abijwe"
+    }, {
+      "icon": "assets/img/contact/github.svg",
+      "title": "github",
+      "link": "github.com/ajinkyabijwe"
+    }]
+  },
+  "experience": [{
+      "designation": "Apps Dev Programmer Analyst",
+      "company": "Citi Inc.",
+      "link": "https://www.citi.com/",
+      "time": "2021-Present",
+      "location": "Pune, IN",
+      "location_link": "https://www.google.com/maps/place/Pune,+Maharashtra/@18.5245649,73.7228812",
+      "description": [
+        "Designed and created relational diagrams using d3.js, a powerful JavaScript library for data visualization, to present complex data in an intuitive and visually appealing manner.",
+        "Currently involved in a large-scale project consisting of hundreds of modules, where I actively contribute and collaborate to ensure seamless functionality and timely delivery.",
+        "Successfully developed a custom UI library and components, utilizing advanced rendering techniques, to enhance the user interface and provide reusable and efficient solutions for component rendering. This initiative has significantly improved development speed and ensured consistency across the project",
+        "Effectively utilized reactive components and the NGRX library to render sensitive data in a secure and controlled manner. By leveraging these technologies, I have ensured data privacy and implemented necessary measures to protect sensitive information."
+      ]
+    },
+    {
+      "designation": "Sr. Full Stack Developer",
+      "company": "Cognizant Technology Solutions",
+      "client": "Verizon Inc.",
+      "link": "https://www.cognizant.com/in/en",
+      "time": "2019-2021",
+      "location": "Tampa, US & Pune, IN",
+      "location_link": "https://www.google.com/maps/place/Tampa,+FL/@27.9944116,-82.5943635,11z",
+      "description": [
+        "Designed and developed the complete UI architecture for the Northstar application, encompassing various components and modules",
+        "Developed custom modules that dynamically generate network diagrams and establish connections based on API data, resulting in improved visualization and enhanced user experience.",
+        "Demonstrated expertise in implementing an efficient caching mechanism using the ngRX reactive library to store and retrieve dynamic data, enhancing application performance.",
+        "Designed and implemented a robust shopping cart model, enabling the creation and management of orders, as well as the ability to add/remove network components. Effectively tracked in-progress orders, ensuring smooth order management.",
+        "Successfully integrated WebSocket technology to capture real-time events and messages, facilitating the reloading and repopulation of network components. This implementation enhanced the application's responsiveness and provided a seamless user experience."
+      ]
+    },
+    {
+      "designation": "Full Stack Engineer",
+      "company": "Technumen Inc.",
+      "client": "Verizon Inc.",
+      "link": "https://www.verizon.com/",
+      "time": "2018-2019",
+      "location": "Tampa, US",
+      "location_link": "https://www.google.com/maps/place/Tampa,+FL/@27.9944116,-82.5943635,11z",
+      "description": [
+        "Upgraded and redesigned enterprise application, encompassing multiple modules, from Angular version 1 to 10, while migrating codebase from JavaScript to Typescript.",
+        "Received special recognition from both clients and employers for achieving a remarkable 40% enhancement in application reliability and loading speed, along with improved map rendering capabilities.",
+        "Spearheaded the development and migration of existing JavaScript and Java web applications, introducing new map layers, Angular directives, services, and controllers. Leveraged Google Maps API to dynamically showcase data within the map interface.",
+        "Demonstrated proficiency in creating responsive web pages, enhancing user-friendliness, and utilizing Adobe Illustrator and Moqups for wireframing. Collaborated with the team to gather feedback and incorporate design changes effectively."
+      ]
+    },
+    {
+      "designation": "Software Engineer",
+      "company": "Larsen and Toubro Infotech Ltd.",
+      "client": "Citi Inc.",
+      "link": "https://www.larsentoubro.com/",
+      "time": "2016-2018",
+      "location": "Charlotte, US",
+      "location_link": "https://www.google.com/maps/place/Charlotte,+NC/@35.2030728,-80.9799114,11z",
+      "description": [
+        "Developed recursive JavaScript modules, including Angular UI grid and Angular JSON Explorer, enabling dynamic and recursive data display.",
+        "Integrated various external JavaScript and Angular libraries, such as Underscore, Chart, and Angular Bootstrap, to leverage dynamic data from APIs and enhance the project's UI rendering capabilities.",
+        "Utilized Object-Oriented JavaScript concepts extensively, incorporating object manipulation, inheritance, mix-ins, static inheritance, and additional utilities for improved handling of objects and arrays.",
+        "Played a key role in onboarding resources and facets (informational blocks) into the application's server-side database, ensuring seamless integration and efficient data management."
+      ]
+    }
+  ],
+  "projects": [{
+      "name": "Dynamic Network Manager",
+      "description": "Portal for Verizon Customers to create and modify network based policies and track order statuses."
+    },
+    {
+      "name": "Northstar",
+      "description": "Portal for Verizon Customers to create dynamic network combination to provision or deprovision network elements and create/ track orders for network elements"
+    },
+    {
+      "name": "Fiber Inventory Management",
+      "description": "Portal for Verizon Engineers to create a plan and calculate costs and impacts to lay down the fiber network in the physical world."
+    },
+    {
+      "name": "The Next Level App",
+      "description": "Android/iOS Appication for team to track their daily progress and entries"
+    },
+    {
+      "name": "360 Response",
+      "description": "Android/iOS Appication to track and find hydrants in reatime with visual representation in google streetview of fire location and hydrants.",
+      "link": "https://apps.apple.com/us/app/360-response/id1430780699"
+    },
+    {
+      "name": "Citi Insight",
+      "description": "Portal for Citi financial to search, modify and keep track of financial records and reports made accross the organizantions."
+    },
+    {
+      "name": "Citi Onboarding",
+      "description": "Portal for Citi software engineers to onboard financial information blocks and up to date data in citi insight application."
+    }
+  ],
+  "skills": [{
+      "name": "Programming Languages",
+      "description": ["JavaScript", "Typescript", "Python", "HTML5", "CSS/SCSS"]
+    },
+    {
+      "name": "Databases",
+      "description": ["MySQL", "PostgreSQL", "MongoDB", "Oracle"]
+    },
+    {
+      "name": "JS Libraries & Frameworks",
+      "description": ["Angular", "React", "Vue", "Node JS", "NPM Packages", "Ionic", "Google Maps API", "Open Street Maps", "Mapbox JS API", "NgRx", "Jasmine", "Karma", "Chart JS", "Bootstrap"]
+    },
+    {
+      "name": "Deployment Servers",
+      "description": ["Amazon AWS Cloud", "Google Cloud", "Jenkins", "Google Firebase", "Heroku", "Cloudinary"]
+    },
+    {
+      "name": "Version Control",
+      "description": ["GIT", "SVN", "Github", "Gitlab", "Bit Bucket"]
+    },
+    {
+      "name": "Prototyping Tools",
+      "description": ["Figma", "Invision", "Photoshop", "Illustrator"]
+    },
+    {
+      "name": "Planning Tools",
+      "description": ["Jira", "Confluence", "Trello"]
+    }
+  ],
+  "education": [{
+      "degree": "Master of Science",
+      "major": "Computer Science",
+      "university": "California State University, Fullerton",
+      "location": "Fullerton, US",
+      "duration": "2014-2016",
+      "gpa": 3.64
+    },
+    {
+      "degree": "Bachelor of Engineering",
+      "major": "Computer Science",
+      "university": "Amravati University",
+      "location": "Amravati, IN",
+      "duration": "2009-2013",
+      "gpa": 3.8
+    }
+  ],
+  "achievements": [{
+      "name": "Achieved special recognition for leading the successful upgrade of the client application from Angular 1 to 10, resulting in a significant improvement of 40% in application reliability, loading speed, and map rendering capabilities."
+    },
+    {
+      "name": "Developed and published Chrome themes and extensions that garnered over 10,000 downloads, demonstrating a keen understanding of user preferences and design aesthetics."
+    },
+    {
+      "name": "Earned multiple badges on GitHub for contributions to open-source projects, showcasing a strong commitment to collaboration and the ability to create impactful and high-quality code."
+    }
+  ],
+  "certifications": [{
+      "name": "SAFe Agile",
+      "link": "https://www.youracclaim.com/badges/d484ea58-2835-481b-81c6-2ebcaca2edbc/public_url"
+    },
+    {
+      "name": "Google Quicklabs",
+      "link": "https://www.qwiklabs.com/public_profiles/f52d60f2-0f80-4796-a12a-329ad098493e"
+    },
+    {
+      "name": "Android Development"
+    },
+    {
+      "name": "IBM Rational Rose"
+    }
+  ],
+  "interests": [
+    "Movies",
+    "Games",
+    "Hiking"
+  ],
+  "languages": [
+    "English (Professional)",
+    "Marathi (Native)",
+    "Hindi"
+  ]
+}
