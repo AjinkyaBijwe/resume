@@ -39,10 +39,10 @@
                 {{ info.text }}
               </a>
             </div>
-            <a [href]="resumeData.info.resume_url" class="btn download" title="Download Resume" target="_blank">
+            <a [href]="resumeData.info.resume_url" class="btn download" title="Download Resume" target="_blank" *ngIf="!hideInDowload">
               <img src="assets/img/download.svg" alt="Download Resume" />
             </a>
-            <button class="btn set-theme" (click)="setDarkMode()" title="Set Dark Mode">
+            <button class="btn set-theme" (click)="setDarkMode()" title="Set Dark Mode" *ngIf="!hideInDowload">
               <img [src]="darkMode ? 'assets/img/light-mode.svg' : 'assets/img/dark-mode.svg'" alt="Set Dark Mode" />
             </button>
           </section>
