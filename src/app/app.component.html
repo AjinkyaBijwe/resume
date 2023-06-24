@@ -56,7 +56,7 @@
           <div class="item mb-3" *ngFor="let data of resumeData?.experience; let i = index">
             <div class="item-heading">
               <h6 class="item-title mb-0 fw-medium">{{ data?.designation }}</h6>
-              <div class="item-meta fw-medium text-muted d-flex align-items-center justify-content-between" style="font-size: 0.9rem;">
+              <div class="item-meta fw-medium text-muted d-flex align-items-center justify-content-between">
                 <div class="company">
                   {{ data?.company }}
                 </div>
@@ -85,8 +85,8 @@
           </div>
           <div class="item mt-3" *ngFor="let education of resumeData?.education">
             <div class="item-heading">
-              <h6 class="item-title mb-1 fw-medium">{{ education.degree }} in {{ education.major }}</h6>
-              <div class="item-meta fw-medium text-muted d-flex align-items-center justify-content-between" style="font-size: 0.9rem;">
+              <h6 class="item-title mb-0 fw-medium">{{ education.degree }} in {{ education.major }}</h6>
+              <div class="item-meta fw-medium text-muted d-flex align-items-center justify-content-between">
                 <div class="university">
                   {{ education.university }} (GPA: {{education.gpa}})
                 </div>
