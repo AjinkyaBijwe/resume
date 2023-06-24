@@ -8,29 +8,29 @@
   "contactInfo": {
     "main" : [{
       "icon": "assets/img/contact/email.svg",
-      "title": "Email",
-      "link": "ajinkya.bijwe@gmail.com"
+      "text": "ajinkya.bijwe@gmail.com",
+      "link": "mailto:ajinkya.bijwe@gmail.com"
     }, {
       "icon": "assets/img/contact/phone.svg",
-      "title": "Phone",
-      "link": "+91 7758854840"
+      "text": "+91 7758854840",
+      "link": "tel:+91 7758854840"
     }, {
       "icon": "assets/img/contact/location.svg",
-      "title": "Location",
-      "link": "Pune, IN"
+      "text": "Pune, IN",
+      "link": "https://goo.gl/maps/hj5772bNFtB75E617"
     }],
     "social": [{
       "icon": "assets/img/contact/globe.svg",
-      "title": "Website",
-      "link": "ajinkya.dev"
+      "text": "ajinkya.dev",
+      "link": "https://ajinkya.dev"
     }, {
       "icon": "assets/img/contact/linkedin.svg",
-      "title": "linkedin",
-      "link": "linkedin.com/abijwe"
+      "text": "linkedin.com/abijwe",
+      "link": "https://linkedin.com/abijwe"
     }, {
       "icon": "assets/img/contact/github.svg",
-      "title": "github",
-      "link": "github.com/ajinkyabijwe"
+      "text": "github.com/ajinkyabijwe",
+      "link": "https://github.com/ajinkyabijwe"
     }]
   },
   "experience": [{

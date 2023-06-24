@@ -23,20 +23,20 @@
 
         <div class="contact col-12 col-lg-4 col-xl-4 p-4 m-0">
           <section class="section contact-info">
-            <div class="item mt-2 d-flex align-items-center" *ngFor="let info of resumeData.contactInfo.main" [title]="info.title">
+            <div class="item mt-2 d-flex align-items-center" *ngFor="let info of resumeData.contactInfo.main" [title]="info.text">
               <a class="item-heading icon" [href]="info.link" target="_blank">
-                <img [src]="info.icon" [alt]="info.title" />
+                <img [src]="info.icon" [alt]="info.text" />
               </a>
               <a [href]="info.link" target="_blank" class="item-content text-light text-decoration-none">
-                {{ info.link }}
+                {{ info.text }}
               </a>
             </div>
-            <div class="item mt-2 d-flex align-items-center" *ngFor="let info of resumeData.contactInfo.social" [title]="info.title">
-              <a class="item-heading icon" [href]="'https://' + info.link" target="_blank">
-                <img [src]="info.icon" [alt]="info.title" />
+            <div class="item mt-2 d-flex align-items-center" *ngFor="let info of resumeData.contactInfo.social" [title]="info.text">
+              <a class="item-heading icon" [href]="info.link" target="_blank">
+                <img [src]="info.icon" [alt]="info.text" />
               </a>
               <a [href]="info.link" target="_blank" class="item-content text-light text-decoration-none">
-                {{ info.link }}
+                {{ info.text }}
               </a>
             </div>
           </section>
@@ -48,7 +48,7 @@
       <div class="main col-12 col-lg-8 col-xl-8 p-4">
         <section class="section experience pb-4">
           <div class="section-header d-flex mb-3">
-            <div class="section-icon me-2">
+            <div class="section-icon">
               <img src="assets/img/experience.svg" alt="experience" />
             </div>
             <h5 class="text-uppercase section-heading m-0">Work Experiences</h5>
@@ -78,7 +78,7 @@
 
         <section class="section education">
           <div class="section-header d-flex">
-            <div class="section-icon me-2">
+            <div class="section-icon">
               <img src="assets/img/education.svg" alt="education" />
             </div>
             <h5 class="text-uppercase section-heading m-0">Education</h5>
@@ -100,13 +100,13 @@
         
         <section class="section projects pt-4" *ngIf="!hideInDowload">
           <div class="section-header d-flex mb-3">
-            <div class="section-icon me-2">
+            <div class="section-icon">
               <img src="assets/img/projects.svg" alt="Projects" />
             </div>
             <h5 class="text-uppercase section-heading m-0">Projects</h5>
           </div>
           <div class="item mb-3" *ngFor="let data of resumeData?.projects">
-            <div class="item-heading fw-semibold">
+            <div class="item-heading fw-medium">
               {{ data.name }}
             </div>
             <div class="item-content">
@@ -118,14 +118,14 @@
 
       <div class="aside col-12 col-lg-4 col-xl-4 p-4">
         <section class="section skills pb-4">
-          <div class="section-header d-flex mb-3">
-            <div class="section-icon me-2">
+          <div class="section-header d-flex">
+            <div class="section-icon">
               <img src="assets/img/skills.svg" alt="experience" />
             </div>
             <h5 class="text-uppercase section-heading m-0">Skills</h5>
           </div>
-          <div class="mb-3 skill" *ngFor="let item of resumeData?.skills">
-            <div class="item-title fw-semibold mb-2">{{ item.name }}</div>
+          <div class="mt-3 skill" *ngFor="let item of resumeData?.skills">
+            <div class="item-title fw-medium mb-2">{{ item.name }}</div>
             <div class="badge-items">
               <div class="badge" *ngFor="let desc of item.description">{{ desc }}</div>
             </div>
@@ -134,21 +134,26 @@
         
         <section class="section certification pb-4">
           <div class="section-header d-flex mb-3">
-            <div class="section-icon me-2">
+            <div class="section-icon">
               <img src="assets/img/certificates.svg" alt="experience" />
             </div>
             <h5 class="text-uppercase section-heading m-0">Certifications</h5>
           </div>
-          <div class="badge-items">
-            <a class="badge text-decoration-none" [href]="certification.link" *ngFor="let certification of resumeData?.certifications" target="_blank">
-              {{ certification.name }}
-            </a>
+          <div class="item mt-3">
+            <div class="item-content mt-2">
+              <div class="description-list">
+                <div class="d-flex description mb-3" *ngFor="let certification of resumeData?.certifications">
+                  <div class="marker">●</div>
+                  <a class="desc text-decoration-none" [href]="certification.link" target="_blank"> {{certification.name}}</a> 
+                </div>
+              </div>
+            </div>
           </div>
         </section>
         
         <section class="section achievements">
           <div class="section-header d-flex mb-3">
-            <div class="section-icon me-2">
+            <div class="section-icon">
               <img src="assets/img/achievements.svg" alt="experience" />
             </div>
             <h5 class="text-uppercase section-heading m-0">Achievements</h5>
@@ -167,25 +172,39 @@
         
         <section class="section interests pt-4" *ngIf="!hideInDowload">
           <div class="section-header d-flex mb-3">
-            <div class="section-icon me-2">
+            <div class="section-icon">
               <img src="assets/img/interests.svg" alt="Interests" />
             </div>
             <h5 class="text-uppercase section-heading m-0">Interests</h5>
           </div>
-          <div class="badge-items">
-            <div class="item-content badge" *ngFor="let interest of resumeData?.interests">{{ interest }}</div>
+          <div class="item mt-3">
+            <div class="item-content mt-2">
+              <div class="description-list">
+                <div class="d-flex description mb-3" *ngFor="let interest of resumeData?.interests">
+                  <div class="marker">●</div>
+                  <div class="desc"> {{interest}}</div> 
+                </div>
+              </div>
+            </div>
           </div>
         </section>
         
         <section class="section languages pt-4">
           <div class="section-header d-flex mb-3">
-            <div class="section-icon me-2">
+            <div class="section-icon">
               <img src="assets/img/languages.svg" alt="Languages" />
             </div>
             <h5 class="text-uppercase section-heading m-0">Languages</h5>
           </div>
-          <div class="badge-items">
-            <div class="item-content badge" *ngFor="let language of resumeData?.languages">{{ language }}</div>
+          <div class="item mt-3">
+            <div class="item-content mt-2">
+              <div class="description-list">
+                <div class="d-flex description mb-3" *ngFor="let language of resumeData?.languages">
+                  <div class="marker">●</div>
+                  <div class="desc"> {{language}}</div> 
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </div>
