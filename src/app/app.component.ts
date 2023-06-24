@@ -1,16 +1,17 @@
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 
 import * as resumeDate from 'src/assets/data/data.json';
 
 import { jsPDF } from 'jspdf';
 import html2canvas from 'html2canvas';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   @ViewChild('resume') resume!: ElementRef;
 
   title = 'resume';
@@ -21,8 +22,14 @@ export class AppComponent {
 
   hideInDowload = false;
 
-  setDarkMode() {
-  
+  constructor(private route: ActivatedRoute) {
+
+  }
+
+  ngOnInit(): void {
+    this.route.queryParams.subscribe((params: any) => {
+      this.hideInDowload = params?.download === 'true' ? true : false;;
+    });
   }
 
   downloadPDF() {

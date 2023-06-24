@@ -69,6 +69,33 @@ a {
   }
 }
 
+.main-wrapper {
+
+  &.download {
+    padding: 0 !important;
+
+    .container {
+      border: none;
+      border-radius: 0;
+      max-width: 100%;
+
+      .header {
+
+        .contact {
+          border-radius: 0;
+        }
+      }
+
+      .main-body {
+
+        .aside {
+          border-radius: 0;
+        }
+      }
+    }
+  }
+}
+
 .container {
   border: 0.5rem solid #fff;
 
