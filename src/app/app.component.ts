@@ -1,9 +1,5 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
-
 import * as resumeDate from 'src/assets/data/data.json';
-
-import { jsPDF } from 'jspdf';
-import html2canvas from 'html2canvas';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({
@@ -23,7 +19,6 @@ export class AppComponent implements OnInit {
   hideInDowload = false;
 
   constructor(private route: ActivatedRoute) {
-
   }
 
   ngOnInit(): void {
@@ -32,24 +27,15 @@ export class AppComponent implements OnInit {
     });
   }
 
-  downloadPDF() {
-    this.hideInDowload = true;
-
-    setTimeout(() => {
-      const resume = this.resume.nativeElement;
-      html2canvas(resume, { scrollY: 0 }).then(canvas => {
-        const contentDataURL = canvas.toDataURL('image/png')  
-        const doc = new jsPDF('p', 'mm', 'a4');
-        const bufferX = 0;
-        const bufferY = 0;
-        const imgProps = (<any>doc).getImageProperties(contentDataURL);
-        const pdfWidth = doc.internal.pageSize.getWidth() - 2 * bufferX;
-        const pdfHeight = (imgProps.height * pdfWidth) / imgProps.width;
-        doc.addImage(contentDataURL, 'PNG', bufferX, bufferY, pdfWidth, pdfHeight, undefined, 'MEDIUM');
-        doc.save('Ajinkya_Bijwe_Resume'); 
-        this.hideInDowload = false;
-      }); 
-    }, 100);
+  setDarkMode() {
+    if (document.documentElement.getAttribute('data-bs-theme') === 'dark') {
+      document.documentElement.setAttribute('data-bs-theme', 'light');
+      this.darkMode = false;
+    }
+    else {
+      document.documentElement.setAttribute('data-bs-theme', 'dark');
+      this.darkMode = true;
+    }
   }
 }
 
