@@ -42,9 +42,9 @@
       "location": "Pune, IN",
       "location_link": "https://www.google.com/maps/place/Pune,+Maharashtra/@18.5245649,73.7228812",
       "description": [
-        "Designed and created relational diagrams using d3.js, a powerful JavaScript library for data visualization, to present complex data in an intuitive and visually appealing manner.",
         "Currently involved in a large-scale project consisting of hundreds of modules, where I actively contribute and collaborate to ensure seamless functionality and timely delivery.",
-        "Successfully developed a custom UI library and components, utilizing advanced rendering techniques, to enhance the user interface and provide reusable and efficient solutions for component rendering. This initiative has significantly improved development speed and ensured consistency across the project",
+        "Successfully developed a custom UI library and components, utilizing advanced rendering techniques, to enhance the user interface and provide reusable and efficient solutions for component rendering. This initiative has significantly improved development speed and ensured consistency across the project.",
+        "Designed and created relational diagrams using d3.js, a powerful JavaScript library for data visualization, to present complex data in an intuitive and visually appealing manner.",
         "Effectively utilized reactive components and the NGRX library to render sensitive data in a secure and controlled manner. By leveraging these technologies, I have ensured data privacy and implemented necessary measures to protect sensitive information."
       ]
     },
@@ -57,7 +57,7 @@
       "location": "Tampa, US & Pune, IN",
       "location_link": "https://www.google.com/maps/place/Tampa,+FL/@27.9944116,-82.5943635,11z",
       "description": [
-        "Designed and developed the complete UI architecture for the Northstar application, encompassing various components and modules",
+        "Designed and developed the complete UI architecture for the Verizon Northstar application, encompassing various network components and modules.",
         "Developed custom modules that dynamically generate network diagrams and establish connections based on API data, resulting in improved visualization and enhanced user experience.",
         "Demonstrated expertise in implementing an efficient caching mechanism using the ngRX reactive library to store and retrieve dynamic data, enhancing application performance.",
         "Designed and implemented a robust shopping cart model, enabling the creation and management of orders, as well as the ability to add/remove network components. Effectively tracked in-progress orders, ensuring smooth order management.",
@@ -73,7 +73,7 @@
       "location": "Tampa, US",
       "location_link": "https://www.google.com/maps/place/Tampa,+FL/@27.9944116,-82.5943635,11z",
       "description": [
-        "Upgraded and redesigned enterprise application, encompassing multiple modules, from Angular version 1 to 10, while migrating codebase from JavaScript to Typescript.",
+        "Upgraded and redesigned Verizon Fiber Inventory Management application, encompassing multiple modules, from Angular version 1 to 10, while migrating codebase from JavaScript to Typescript.",
         "Received special recognition from both clients and employers for achieving a remarkable 40% enhancement in application reliability and loading speed, along with improved map rendering capabilities.",
         "Spearheaded the development and migration of existing JavaScript and Java web applications, introducing new map layers, Angular directives, services, and controllers. Leveraged Google Maps API to dynamically showcase data within the map interface.",
         "Demonstrated proficiency in creating responsive web pages, enhancing user-friendliness, and utilizing Adobe Illustrator and Moqups for wireframing. Collaborated with the team to gather feedback and incorporate design changes effectively."
@@ -88,7 +88,7 @@
       "location": "Charlotte, US",
       "location_link": "https://www.google.com/maps/place/Charlotte,+NC/@35.2030728,-80.9799114,11z",
       "description": [
-        "Developed recursive JavaScript modules, including Angular UI grid and Angular JSON Explorer, enabling dynamic and recursive data display.",
+        "Developed recursive JavaScript modules, including Angular UI grid and Angular JSON Explorer for Citi Insight application enabling dynamic and recursive data display.",
         "Integrated various external JavaScript and Angular libraries, such as Underscore, Chart, and Angular Bootstrap, to leverage dynamic data from APIs and enhance the project's UI rendering capabilities.",
         "Utilized Object-Oriented JavaScript concepts extensively, incorporating object manipulation, inheritance, mix-ins, static inheritance, and additional utilities for improved handling of objects and arrays.",
         "Played a key role in onboarding resources and facets (informational blocks) into the application's server-side database, ensuring seamless integration and efficient data management."
