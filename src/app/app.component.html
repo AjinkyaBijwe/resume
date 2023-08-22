@@ -75,7 +75,7 @@
               <div class="description-list">
                 <div class="d-flex description mb-1" *ngFor="let description of data?.description">
                   <div class="marker">●</div>
-                  <div class="desc"> {{description }}</div> 
+                  <div class="desc text-justify"> {{description }}</div> 
                 </div>
               </div>
             </div>
@@ -94,7 +94,8 @@
               <h6 class="item-title mb-0 fw-medium">{{ education.degree }} in {{ education.major }}</h6>
               <div class="item-meta fw-medium text-muted d-flex align-items-center justify-content-between">
                 <div class="university">
-                  {{ education.university }} (GPA: {{education.gpa}})
+                  {{ education.university }} 
+                  <!-- (GPA : {{education.gpa.toFixed(2)}} / {{education.max_gpa.toFixed(2)}}) -->
                 </div>
                 <div class="location">
                   {{ education.duration }} | {{ education.location }}
@@ -115,7 +116,7 @@
             <div class="item-heading fw-medium">
               {{ data.name }}
             </div>
-            <div class="item-content">
+            <div class="item-content text-justify">
               {{ data?.description }}
             </div>
           </div>

@@ -156,7 +156,8 @@
       "university": "California State University, Fullerton",
       "location": "Fullerton, US",
       "duration": "2014-2016",
-      "gpa": 3.64
+      "gpa": 3.64,
+      "max_gpa": 4.00
     },
     {
       "degree": "Bachelor of Engineering",
@@ -164,7 +165,8 @@
       "university": "Amravati University",
       "location": "Amravati, IN",
       "duration": "2009-2013",
-      "gpa": 3.8
+      "gpa": 3.80,
+      "max_gpa": 4.00
     }
   ],
   "achievements": [{
