@@ -23,7 +23,8 @@
 
         <div class="contact col-12 col-lg-4 col-xl-4 p-4 m-0">
           <section class="section contact-info">
-            <div class="item mt-2 d-flex align-items-center" *ngFor="let info of resumeData.contactInfo.main" [title]="info.text">
+            <div class="item mt-2 d-flex align-items-center" *ngFor="let info of resumeData.contactInfo.main" 
+              [title]="info.text" [class.d-none]="info.hide && !hideInDowload">
               <a class="item-heading icon" [href]="info.link" target="_blank">
                 <img [src]="info.icon" [alt]="info.text" />
               </a>

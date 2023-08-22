@@ -1,3 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 512.001 512.001" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
-  <path fill="#ffffff" d="M192 0C85.969 0 0 85.969 0 192C0 269.41 26.969 291.035 172.281 501.676C177.047 508.559 184.523 512 192 512S206.953 508.559 211.719 501.676C357.031 291.035 384 269.41 384 192C384 85.969 298.031 0 192 0ZM192 445.836C174.307 420.371 158.582 397.969 144.623 378.086C57.562 254.066 48 238.875 48 192C48 112.598 112.598 48 192 48S336 112.598 336 192C336 238.875 326.438 254.066 239.377 378.086C225.412 397.98 209.684 420.383 192 445.836ZM192 112C147.818 112 112 147.816 112 192S147.818 272 192 272C236.184 272 272 236.184 272 192S236.184 112 192 112ZM192 224C174.355 224 160 209.645 160 192S174.355 160 192 160S224 174.355 224 192S209.645 224 192 224Z" />
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 682.667 682.667" style="enable-background:new 0 0 512 512" xml:space="preserve" class="">
+  <g>
+    <defs stroke-width="45" style="stroke-width: 45;">
+      <clipPath id="a" clipPathUnits="userSpaceOnUse" stroke-width="45" style="stroke-width: 45;">
+        <path d="M0 512h512V0H0Z" fill="#ffffff" data-original="#000000" opacity="1" stroke-width="45" style="stroke-width: 45;"></path>
+      </clipPath>
+    </defs>
+    <g clip-path="url(#a)" transform="matrix(1.33333 0 0 -1.33333 0 682.667)" stroke-width="45" style="stroke-width: 45;">
+      <path d="M0 0c-60 90-165 212-165 317 0 90.981 74.019 165 165 165s165-74.019 165-165C165 212 60 90 0 0Z" style="stroke-width: 45; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; stroke-dasharray: none; stroke-opacity: 1;" transform="translate(256 15)" fill="none" stroke="#ffffff" stroke-width="45" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity="" data-original="#000000" opacity="1" class=""></path>
+      <path d="M0 0c-41.453 0-75 33.647-75 75s33.647 75 75 75 75-33.647 75-75S41.453 0 0 0Z" style="stroke-width: 45; stroke-linecap: round; stroke-linejoin: round; stroke-miterlimit: 10; stroke-dasharray: none; stroke-opacity: 1;" transform="translate(256 257)" fill="none" stroke="#ffffff" stroke-width="45" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-dasharray="none" stroke-opacity="" data-original="#000000" opacity="1" class=""></path>
+    </g>
+  </g>
 </svg>
