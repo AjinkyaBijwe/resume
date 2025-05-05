@@ -2,40 +2,49 @@
   "info": {
     "name": "Ajinkya Bijwe",
     "designation": "Front-End/Full Stack Developer",
-    "summary": "Passionate and proficient developer with over 7 years of experience in application development, rapid prototyping, and database management. Speaheaded successful transitions from legacy frameworks to cutting-edge technologies, optimizing system performance and user experience. Committed to continuous growth to further enhance skills and stay ahead of industry trends. Dedicated professional with a strong drive to deliver high-quality solutions that meet client needs and exceed expectations.",
+    "summary": "Passionate and proficient developer with over 8.5 years of experience in application development, rapid prototyping, and database management. Speaheaded successful transitions from legacy frameworks to cutting-edge technologies, optimizing system performance and user experience. Committed to continuous growth to further enhance skills and stay ahead of industry trends. Dedicated professional with a strong drive to deliver high-quality solutions that meet client needs and exceed expectations.",
     "picture": "https://avatars0.githubusercontent.com/u/8812357?s=460&u=0fcfbe5f0083b8a5b0e49aa83f0173c9c4f9b319&v=4",
     "resume_url": "https://drive.google.com/file/d/1sbpX6gVaW76zvUQP7G7nLcSZxxDU0ksi/view?usp=sharing"
   },
   "contactInfo": {
-    "main" : [{
-      "icon": "assets/img/contact/email.svg",
-      "text": "ajinkya.bijwe@gmail.com",
-      "link": "mailto:ajinkya.bijwe@gmail.com"
-    }, {
-      "icon": "assets/img/contact/phone.svg",
-      "text": "+91 7758854840",
-      "link": "tel:+917758854840",
-      "hide": true
-    }, {
-      "icon": "assets/img/contact/location.svg",
-      "text": "Pune, IN",
-      "link": "https://goo.gl/maps/hj5772bNFtB75E617"
-    }],
-    "social": [{
-      "icon": "assets/img/contact/globe.svg",
-      "text": "ajinkya.dev",
-      "link": "https://ajinkya.dev"
-    }, {
-      "icon": "assets/img/contact/linkedin.svg",
-      "text": "linkedin.com/in/ajinkyabijwe",
-      "link": "https://linkedin.com/in/ajinkyabijwe"
-    }, {
-      "icon": "assets/img/contact/github.svg",
-      "text": "github.com/ajinkyabijwe",
-      "link": "https://github.com/ajinkyabijwe"
-    }]
+    "main": [
+      {
+        "icon": "assets/img/contact/email.svg",
+        "text": "ajinkya.bijwe@gmail.com",
+        "link": "mailto:ajinkya.bijwe@gmail.com"
+      },
+      {
+        "icon": "assets/img/contact/phone.svg",
+        "text": "+91 7758854840",
+        "link": "tel:+917758854840",
+        "hide": true
+      },
+      {
+        "icon": "assets/img/contact/location.svg",
+        "text": "Pune, IN",
+        "link": "https://goo.gl/maps/hj5772bNFtB75E617"
+      }
+    ],
+    "social": [
+      {
+        "icon": "assets/img/contact/globe.svg",
+        "text": "ajinkya.dev",
+        "link": "https://ajinkya.dev"
+      },
+      {
+        "icon": "assets/img/contact/linkedin.svg",
+        "text": "linkedin.com/in/ajinkyabijwe",
+        "link": "https://linkedin.com/in/ajinkyabijwe"
+      },
+      {
+        "icon": "assets/img/contact/github.svg",
+        "text": "github.com/ajinkyabijwe",
+        "link": "https://github.com/ajinkyabijwe"
+      }
+    ]
   },
-  "experience": [{
+  "experience": [
+    {
       "designation": "Assistant Vice President",
       "company": "Citi Inc.",
       "link": "https://www.citi.com/",
@@ -96,7 +105,8 @@
       ]
     }
   ],
-  "projects": [{
+  "projects": [
+    {
       "name": "Dynamic Network Manager",
       "description": "Portal for Verizon Customers to create and modify network based policies and track order statuses."
     },
@@ -126,7 +136,8 @@
       "description": "Portal for Citi software engineers to onboard financial information blocks and up to date data in citi insight application."
     }
   ],
-  "skills": [{
+  "skills": [
+    {
       "name": "Programming Languages",
       "description": ["JavaScript", "Typescript", "Python", "HTML5", "CSS/SCSS"]
     },
@@ -136,11 +147,33 @@
     },
     {
       "name": "JS Libraries & Frameworks",
-      "description": ["Angular", "React", "Vue", "Node JS", "NPM Packages", "Ionic", "Google Maps API", "Open Street Maps", "Mapbox JS API", "NgRx", "Jasmine", "Karma", "Chart JS", "Bootstrap"]
+      "description": [
+        "Angular",
+        "React",
+        "Vue",
+        "Node JS",
+        "NPM Packages",
+        "Ionic",
+        "Google Maps API",
+        "Open Street Maps",
+        "Mapbox JS API",
+        "NgRx",
+        "Jasmine",
+        "Karma",
+        "Chart JS",
+        "Bootstrap"
+      ]
     },
     {
       "name": "Deployment Servers",
-      "description": ["Amazon AWS Cloud", "Google Cloud", "Jenkins", "Google Firebase", "Heroku", "Cloudinary"]
+      "description": [
+        "Amazon AWS Cloud",
+        "Google Cloud",
+        "Jenkins",
+        "Google Firebase",
+        "Heroku",
+        "Cloudinary"
+      ]
     },
     {
       "name": "Version Control",
@@ -155,14 +188,15 @@
       "description": ["Jira", "Confluence", "Trello"]
     }
   ],
-  "education": [{
+  "education": [
+    {
       "degree": "Master of Science",
       "major": "Computer Science",
       "university": "California State University, Fullerton",
       "location": "Fullerton, US",
       "duration": "2014-2016",
       "gpa": 3.64,
-      "max_gpa": 4.00
+      "max_gpa": 4.0
     },
     {
       "degree": "Bachelor of Engineering",
@@ -170,11 +204,12 @@
       "university": "Amravati University",
       "location": "Amravati, IN",
       "duration": "2009-2013",
-      "gpa": 3.80,
-      "max_gpa": 4.00
+      "gpa": 3.8,
+      "max_gpa": 4.0
     }
   ],
-  "achievements": [{
+  "achievements": [
+    {
       "name": "Achieved special recognition for leading the successful upgrade of the client application from Angular 1 to 10, resulting in a significant improvement of 40% in application reliability, loading speed, and map rendering capabilities."
     },
     {
@@ -184,7 +219,8 @@
       "name": "Earned multiple badges on GitHub for contributions to open-source projects, showcasing a strong commitment to collaboration and the ability to create impactful and high-quality code."
     }
   ],
-  "certifications": [{
+  "certifications": [
+    {
       "name": "SAFe Agile",
       "link": "https://www.youracclaim.com/badges/d484ea58-2835-481b-81c6-2ebcaca2edbc/public_url"
     },
@@ -199,14 +235,6 @@
       "name": "IBM Rational Rose"
     }
   ],
-  "interests": [
-    "Movies",
-    "Games",
-    "Hiking"
-  ],
-  "languages": [
-    "English (Professional)",
-    "Marathi (Native)",
-    "Hindi"
-  ]
+  "interests": ["Movies", "Games", "Hiking"],
+  "languages": ["English (Professional)", "Marathi (Native)", "Hindi"]
 }
